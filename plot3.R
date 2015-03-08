@@ -1,5 +1,5 @@
 #read in the data
-data=read.table("household_power_consumption.txt", header=T, sep=';', dec='.')
+data=read.table("household_power_consumption.txt", header=T, sep=';', dec='.', na.string="?")
 #change Date format
 data$Date=as.Date(data$Date, format="%d/%m/%Y")
 #subsetting data
